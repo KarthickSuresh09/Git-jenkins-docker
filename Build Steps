@@ -1,0 +1,5 @@
+Execute shell
+
+
+sudo docker build -t mywebsite .
+sudo docker run -d -p 99:80 mywebsite
