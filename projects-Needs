@@ -1,0 +1,18 @@
+1. Setting up the Infrastructure:
+○ 3 Instances are supposed to be created in AWS.
+○ These 3 Instances will be acting as the Machines where Jenkins and its Jobs will be running
+
+2. Setting Jenkins up:
+○ Install Jenkins in one of the Machines along with Java.
+○ Set up the Jenkins Dashboard.
+○ Setup both of the other machines as Jenkins Agents in the Dashboard.
+
+3. Setting up the GitHub repository provided below:
+○ The GitHub repository that has to be set up is https://github.com/mdn/beginner-html-site-styled
+○ Fork the repository on your end and use that forked repository for the rest of the Assignment.
+○ Create the Dockerfile to containerize the website that has been forked.
+
+4. Create the Jenkins Job to perform the desired tasks as explained below:
+○ The Job is supposed to create a container on port 99 everytime the Job is executed.
+○ The Job will firstly create the image from the Dockerfile and then the container on port 99.
+○ The Job should be triggered every time there is a change made in the GitHub repository.
